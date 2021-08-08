@@ -1,0 +1,155 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+
+.how-work {
+    margin-bottom: 22rem;
+
+    &__row {
+        background-color: $c-secondary;
+        border-radius: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-height: 54rem;
+        margin: 2.6rem -2rem 0;
+
+    }
+
+    &__imgs-wrap { 
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        top: -48px
+    }
+ 
+    &__phone {
+        
+    }
+
+    &__drink {
+        position: absolute;
+        left: -12rem;
+        bottom: 11rem;
+        z-index: -1;
+
+    }
+
+    &__chips {
+        position: absolute;
+        right: -13rem;
+        bottom: -1rem;
+        z-index: 2;
+    }
+
+    &__content {
+        max-width: 42rem;
+        margin-left: 8rem;
+    }
+
+    &__top {
+        font-size: 1.8rem;
+        line-height: 100%;
+        color: $c-text2;
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 4rem;
+        line-height: 138%;
+        color: $c-text;
+
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: $c-text2;
+        
+     }
+
+}
+
+.line-break {
+    display: block;
+}
+
+@media screen and (max-width: $sm) {
+    .how-work {
+        margin-bottom: 10rem;
+        
+        &__phone {
+            max-width: 30vw;
+        }
+
+        &__drink {
+            position: absolute;
+            left: -10rem;
+            bottom: 9rem;
+            z-index: -1;
+            width: 20vw;
+    
+        }
+
+        &__chips {
+            max-width: 20vw;
+            position: absolute;
+            right: -7rem;
+            bottom: -1rem;
+            z-index: 2;
+        }
+
+        &__row {
+            margin: -4.6rem -5rem 0;
+        }
+
+        &__content {
+            
+            margin-left: 6rem;
+        }
+    }
+        
+}
+
+
+@media screen and (max-width: $xs) {
+
+    .how-work {
+        &__row {
+            padding: 0 3.7rem;
+            max-width: unset;
+            justify-content: center; 
+        }
+                    
+
+        &__imgs-wrap {
+            margin-bottom: 3rem;
+            width: 0 auto;
+        }
+        &__phone {
+            width: 100%;
+        }
+
+        &__drink {
+                    
+            left: -4rem;
+            bottom: 4rem;    
+            max-width: 20vw;
+                                
+        }
+        
+        &__chips {
+            max-width: 31vw;    
+            right: -3rem;
+            bottom: 0rem;
+       }
+        
+            
+    }
+}
+
+
+
+    
+

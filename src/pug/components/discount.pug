@@ -1,0 +1,14 @@
+section.discount
+    .container
+        .discount__row 
+            mixin bonus(img, title, description, className)
+                .bonus(class=className)
+                        img(src=img, alt=title).bonus__img
+                        .bonus__title=title 
+                        .bonus__description=description 
+            +bonus('../assets/imgs/bonus1.svg','Loyalty Points','Collect points on each store and redeem them to change for Teas.')
+            +bonus('../assets/imgs/bonus2.svg','Exclusive Store Discounts','You can enjoy lots of discounts from the selected stores near you.','bonus__item')
+            +bonus('../assets/imgs/bonus3.svg','T.Pass Free Drinks','2 Teas for $5.99 each month. and you can carry them over to the next month.')
+        img(src="../assets/imgs/bonus.png", alt="bonuses").discount__img
+
+            

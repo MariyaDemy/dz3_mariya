@@ -1,20 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  </head>
-  <body class="wrapper"> 
-    <header class="header"> 
-      <p>Компонент шапки сайта</p>
-    </header>
-    <div class="main"> 
-      <p>Компоненты страницы</p>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T.Pass</title>
+  <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+
+<body class="wrapper">
+  <header class="header">
+    <div class="container">
+      <div class="header__row"> <a class="logo" href="#"> <img class="logo__img" src="../dist/assets/imgs/logo.svg"
+            alt="logo"></a>
+        <div class="header__links"> <a class="link-header" href="#">Stores</a><a class="link-header" href="#">Help &
+            Support</a><a class="link-header link-header--inverse" href="#">Download</a></div>
+      </div>
     </div>
-    <footer class="footer">
-      <p>Футер страницы</p>
-    </footer>
-  </body>
+  </header>
+  <main>
+    <section class="first-section">
+      <div class="container">
+        <div class="first-section__content">
+          <h1 class="first-section__title"> <span class="primary">Order ahead</span>and earn rewards for every
+            purchase<span class="orange">.</span></h1><a class="first-section__link" href="#"><span>Discover
+              how</span><img src="../dist/assets/imgs/pointer.svg" alt="pointer"></a>
+        </div><img class="first-section__img" src="../dist/assets/imgs/first-section-img.png" alt="people">
+      </div>
+    </section>
+    <div class="items">
+      <div class="container">
+        <div class="items__row">
+          <div class="item"> <img class="item__img" src="../dist/assets/imgs/item1.svg"
+              alt="Order ahead, skip the line">
+            <div class="item__title">Order ahead, skip the line</div>
+            <div class="item__description">Feel like a rock star when you bypass the line and save a bunch of time.
+            </div>
+          </div>
+          <div class="item"> <img class="item__img" src="../dist/assets/imgs/item2.svg" alt="Bonus and discounts">
+            <div class="item__title">Bonus and discounts</div>
+            <div class="item__description">You can enjoy lots of discounts from the selected stores, or accumulate
+              points.</div>
+          </div>
+          <div class="item"> <img class="item__img" src="../dist/assets/imgs/item3.svg" alt="Share with your friends">
+            <div class="item__title">Share with your friends</div>
+            <div class="item__description">Send gifts to your friends and family, and pick up for your coworkers when
+              they can't get away.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="how-work">
+      <div class="container">
+        <div class="how-work__row">
+          <div class="how-work__imgs-wrap"><img class="how-work__phone" src="../dist/assets/imgs/phone1.png"
+              alt="phone"><img class="how-work__drink" src="../dist/assets/imgs/drink1.png" alt="drink"><img
+              class="how-work__chips" src="../dist/assets/imgs/chips.png" alt="chips"></div>
+          <div class="how-work__content">
+            <div class="how-work__top">Your daily pick-me-up</div>
+            <h2 class="how-work__title"><span class="line-break">How does</span>it work.</h2>
+            <div class="how-work__description">Start choosing your favorite teas and snacks in your nearby stores and
+              place your orders, accumulate points, share gifts and teas with your friends and co-workers, and finally
+              use our T-Pass to get your free drinks.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="discount">
+      <div class="container">
+        <div class="discount__row">
+          <div class="bonus"><img class="bonus__img" src="../dist/assets/imgs/bonus1.svg" alt="Loyalty Points">
+            <div class="bonus__title">Loyalty Points</div>
+            <div class="bonus__description">Collect points on each store and redeem them to change for Teas.</div>
+          </div>
+          <div class="bonus bonus__item"><img class="bonus__img" src="../dist/assets/imgs/bonus2.svg"
+              alt="Exclusive Store Discounts">
+            <div class="bonus__title">Exclusive Store Discounts</div>
+            <div class="bonus__description">You can enjoy lots of discounts from the selected stores near you.</div>
+          </div>
+          <div class="bonus"><img class="bonus__img" src="../dist/assets/imgs/bonus3.svg" alt="T.Pass Free Drinks">
+            <div class="bonus__title">T.Pass Free Drinks</div>
+            <div class="bonus__description">2 Teas for $5.99 each month. and you can carry them over to the next month.
+            </div>
+          </div>
+        </div><img class="discount__img" src="../dist/assets/imgs/bonus.png" alt="bonuses">
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
